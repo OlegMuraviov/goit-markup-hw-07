@@ -72,7 +72,7 @@ body {
   border-bottom: 4px solid var(--hover-color);
 }
 
-.navigation, .social, .card-set, .switch, .images-studio, .adress {
+.navigation, .social, .card-set, .switch, .library, .adress {
   margin: 0 auto;
   padding: 0px;
   list-style: none;
@@ -540,7 +540,7 @@ body {
   fill: currentColor;
 }
 
-.projects-photo {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -585,7 +585,7 @@ body {
   outline: none;
 }
 
-.images-studio {
+.library {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,31 +593,31 @@ body {
       flex-wrap: wrap;
 }
 
-.images-item {
+.library__item {
   position: relative;
   margin-right: 30px;
 }
 
-.images-item:nth-child(3n) {
+.library__item:nth-child(3n) {
   margin-right: 0px;
 }
 
-.images-item:nth-child(-n + 6) {
+.library__item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 
-.images-item:hover {
+.library__item:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.images-thumb {
+.library__thumb {
   display: block;
   position: relative;
   overflow: hidden;
 }
 
-.images-thumb-text {
+.library__description {
   position: absolute;
   bottom: 0;
   -webkit-transform: translateY(100%);
@@ -644,8 +644,8 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.images-item:hover .images-thumb-text,
-.images-border {
+.library__item:hover .library__description,
+.library__info {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
@@ -653,7 +653,7 @@ body {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.images-border {
+.library__info {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -669,7 +669,7 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-title {
+.library__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;

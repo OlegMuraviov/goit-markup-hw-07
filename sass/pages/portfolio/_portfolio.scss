@@ -1,4 +1,4 @@
-.projects-photo {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -36,13 +36,13 @@
   }
 }
 
-.images-studio {
+.library {
   @extend %list;
   display: flex;
   flex-wrap: wrap;
 }
 
-.images-item {
+.library__item {
   position: relative;
   margin-right: 30px;
 
@@ -57,13 +57,13 @@
   }
 }
 
-.images-thumb {
+.library__thumb {
   display: block;
   position: relative;
   overflow: hidden;
 }
 
-.images-thumb-text {
+.library__description {
   position: absolute;
   bottom: 0;
   transform: translateY(100%);
@@ -84,15 +84,15 @@
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.images-item:hover .images-thumb-text,
-.images-border {
+.library__item:hover .library__description,
+.library__info {
   transform: translateY(0);
   opacity: 1;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.images-border {
+.library__info {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -104,11 +104,11 @@
   box-shadow: 0;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projects-title {
+.library__title {
   @include font("Roboto", normal, 700, 18px, 2, 0.06em);
   color: var(--main-text-color);
 }
-.projects-description {
+.library__type {
   @include font("Roboto", normal, 400, 16px, 1.88, 0.03em);
   color: var(--additional-text-color);
 }
