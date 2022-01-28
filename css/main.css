@@ -72,13 +72,13 @@ body {
   border-bottom: 4px solid var(--hover-color);
 }
 
-.navigation, .social, .card-set, .advantages__list, .wwd__list, .team__list, .clients__list, .switch, .galery, .adress {
+.navigation, .social, .advantages__list, .wwd__list, .team__list, .clients__list, .switch, .galery, .adress {
   margin: 0 auto;
   padding: 0px;
   list-style: none;
 }
 
-.social, .social__link, .main-btn, .card-set, .advantages__list, .wwd__list, .team__list, .clients__list, .clients__link {
+.social, .social__link, .main-btn, .advantages__list, .wwd__list, .team__list, .clients__list, .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,26 +186,26 @@ body {
   background-color: transparent;
   border-radius: 50%;
   fill: #afb1b8;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social__link:hover, .social__link:focus {
   outline: none;
   background-color: #2196f3;
-  fill: white;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #ffffff;
 }
 
 .social__link--color {
+  fill: var(--bgc-button-portfolio);
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--bgc-button-portfolio);
 }
 
 .social__link--color:hover, .social__link--color:focus {
-  background-color: #2196f3;
   outline: none;
+  background-color: #2196f3;
 }
 
 .main-btn {
@@ -227,10 +227,6 @@ body {
 
 .subscribe__btn {
   padding-right: 62px;
-}
-
-.card-set__item + .card-set__item {
-  margin-left: 30px;
 }
 
 .header {

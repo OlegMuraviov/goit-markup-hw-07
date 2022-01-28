@@ -1,8 +1,0 @@
-.card-set {
-  @extend %list;
-  @extend %middleflex;
-
-  &__item + &__item {
-    margin-left: 30px;
-  }
-}
