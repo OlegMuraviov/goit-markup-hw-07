@@ -1,4 +1,4 @@
-.wwd-wrap {
+.wwd {
   padding-bottom: 94px;
 
   &__title {
@@ -8,6 +8,13 @@
     @include font("Roboto", normal, 700, 36px, 1.17, 0.03em);
     color: var(--main-text-color);
   }
+}
+.wwd__list {
+  @extend %list;
+  @extend %middleflex;
+}
+.wwd__item + .wwd__item {
+  margin-left: 30px;
 }
 
 .example {

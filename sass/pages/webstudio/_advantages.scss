@@ -1,9 +1,17 @@
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+}
+.advantages__list {
+  @extend %list;
+  @extend %middleflex;
 }
 
-.benefits__wrap {
+.advantages__wrap {
   margin-bottom: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -14,22 +22,17 @@
   border-radius: 4px;
 }
 
-.benefits__title {
+.advantages__title {
   margin-bottom: 10px;
 
   @include font("Roboto", normal, 700, 14px, 1.17, 0.03em);
   color: var(--main-text-color);
 }
-.benefits__item {
+.advantages__item {
   width: 270px;
 }
 
-.benefits__icon {
-  width: 70px;
-  height: 70px;
-}
-
-.benefits__desctiption {
+.advantages__desctiption {
   text-align: start;
 
   @include font("Roboto", normal, 400, 14px, 1.71, 0.03em);

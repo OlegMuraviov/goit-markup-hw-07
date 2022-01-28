@@ -36,13 +36,13 @@
   }
 }
 
-.library {
+.galery {
   @extend %list;
   display: flex;
   flex-wrap: wrap;
 }
 
-.library__item {
+.galery__item {
   position: relative;
   margin-right: 30px;
 
@@ -57,19 +57,23 @@
   }
 }
 
-.library__thumb {
+.galery__thumb {
   display: block;
   position: relative;
   overflow: hidden;
 }
-
-.library__description {
+.galery__image {
+  border-top: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.galery__description {
   position: absolute;
   bottom: 0;
   transform: translateY(100%);
   opacity: 0;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 
   width: 100%;
@@ -84,15 +88,7 @@
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.library__item:hover .library__description,
-.library__info {
-  transform: translateY(0);
-  opacity: 1;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.library__info {
+.galery__info {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -104,11 +100,20 @@
   box-shadow: 0;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.library__title {
+
+.galery__item:hover .galery__description,
+.galery__info {
+  transform: translateY(0);
+  opacity: 1;
+  // box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  //   1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.galery__title {
   @include font("Roboto", normal, 700, 18px, 2, 0.06em);
   color: var(--main-text-color);
 }
-.library__type {
+.galery__type {
   @include font("Roboto", normal, 400, 16px, 1.88, 0.03em);
   color: var(--additional-text-color);
 }
